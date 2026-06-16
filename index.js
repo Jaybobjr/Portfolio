@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const resumeBtn = document.getElementById('resume_button');
     if (resumeBtn) {
         resumeBtn.addEventListener('click', () => {
-            window.open('JBPMres.pdf', '_blank');
+            window.open('JaydenBlairsResume.pdf', '_blank');
         });
     }
 
@@ -348,4 +348,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
  
 });
- 
