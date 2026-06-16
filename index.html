@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+    <!-- Animated background -->
+    <div class="gradient-bg">
+        <svg xmlns="http://www.w3.org/2000/svg" style="width:0;height:0;position:absolute;">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"/>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="goo"/>
+                    <feBlend in="SourceGraphic" in2="goo"/>
+                </filter>
+            </defs>
+        </svg>
+        <div class="gradients-container">
+            <div class="g1"></div><div class="g2"></div><div class="g3"></div>
+            <div class="g4"></div><div class="g5"></div><div class="g6"></div>
+            <div class="interactive"></div>
+        </div>
+    </div>
+ 
+    <div class="content">
+        <!-- Navbar -->
+        <header>
+            <div class="logo">Portfolio</div>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <nav>
+                <ul class="nav_links" id="navLinks">
+                    <li><a href="#" class="navbtn navbtn-active" data-target="home">Home</a></li>
+                    <li><a href="#" class="navbtn" data-target="about">About</a></li>
+                    <li><a href="#" class="navbtn" data-target="projects">Projects</a></li>
+                    <li><a href="#" class="navbtn" data-target="contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+ 
+        <!-- ══════════════ HOME ══════════════ -->
+        <section id="home" class="page-section">
+            <div class="home_center">
+                <div class="home_page box">
+                    <h1>Jayden Blair<br>Project Management in Tech</h1>
+                    <br>
+                    <p>
+                        Hi!! I'm a Software Developer with experience in project management. 
+                        I naturally take initiative in organizing projects, coordinating team efforts, and making sure tasks stay on track while they are in process.
+                        Through my academics and my projects, I have gained experience working in Agile team environments, supporting technical documentation, and communicating with stakeholders to align project goals and deliverables.
+                        I also enjoy working with a wide range of people, whether that's collaborating with teammates, helping customers, or communicating with sponsors.
+                    </p>
+                    <br>
+                    <button id="resume_button" class="glow-button">View Resume</button>
+                    <br><br>
+                    <a href="https://linkedin.com" target="_blank">
+                        <img src="linkedin--v2.png" alt="LinkedIn" width="30">
+                    </a>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- ══════════════ ABOUT ══════════════ -->
+        <section id="about" class="page-section" style="display:none;">
+            <div class="about-layout">
+                <aside class="about-sidebar">
+                    <div class="sidebar-sticky">
+                        <h2 class="sidebar-title">ABOUT ME</h2>
+                        <p class="sidebar-subtitle">My portfolio at a glance</p>
+                        <nav class="sidebar-nav">
+                            <a class="sidebar-link active-link" data-section="intro-section">Introduction</a>
+                            <a class="sidebar-link" data-section="skills-section">Skills</a>
+                            <a class="sidebar-link" data-section="education-section">Education</a>
+                        </nav>
+                    </div>
+                </aside>
+                <main class="about-main" id="aboutMain">
+                    <div class="about-section" id="intro-section">
+                        <h2 class="section-heading">Introduction</h2>
+                        <div class="intro-profile">
+                            <div class="profile-img-wrap">
+                                <div class="profile-img-placeholder">JB</div>
+                            </div>
+                            <div class="profile-info">
+                                <h3 class="profile-name">Jayden Blair</h3>
+                                <div class="profile-tags">
+                                    <span class="tag">Project Management</span>
+                                    <span class="tag">Software Development</span>
+                                </div>
+                                <p class="profile-bio">
+                                    I am passionate about project management and hope to build my career in the technology or business industry. I've always been fascinated by technology, its future, and the ways it intersects with business and data analytics.
+                                    I enjoy working in team environments and collaborating with others to turn ideas into successful projects. Whether it's using GitHub, Slack, or Trello to stay organized and track progress, I like helping teams stay aligned and moving toward their goals.
+                                    I am always looking for ways to grow, challenge myself, and learn new skills that will help me succeed both personally and professionally. I take pride in my ability to communicate effectively, manage multiple responsibilities, and adapt quickly in fast-paced environments.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="details-interests-row">
+                            <div class="personal-details">
+                                <h4 class="sub-heading">Personal Details</h4>
+                                <ul class="details-list">
+                                    <li><span class="detail-label">Age</span><span class="detail-value">23</span></li>
+                                    <li><span class="detail-label">Birthdate</span><span class="detail-value">April 9, 2003</span></li>
+                                    <li><span class="detail-label">Phone</span><span class="detail-value">(908) 531-7809</span></li>
+                                    <li><span class="detail-label">Email</span><span class="detail-value">jsblair300@gmail.com</span></li>
+                                    <li><span class="detail-label">Address</span><span class="detail-value">Fortworth, TX</span></li>
+                                </ul>
+                            </div>
+                            <div class="interests-section">
+                                <h4 class="sub-heading">Interests</h4>
+                                <div class="interests-grid">
+                                    <div class="interest-box"><span class="interest-icon">📊</span><span>Data Analytics/SQL</span></div>
+                                    <div class="interest-box"><span class="interest-icon">💻</span><span>UI Design</span></div>
+                                    <div class="interest-box"><span class="interest-icon">🏓</span><span>Pickleball/Walks</span></div>
+                                    <div class="interest-box"><span class="interest-icon">🎮</span><span>Video Games</span></div>
+                                    <div class="interest-box"><span class="interest-icon">👔</span><span>Fashion</span></div>
+                                    <div class="interest-box"><span class="interest-icon">👩🏻‍🍳</span><span>Baking</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-section" id="skills-section">
+                        <h2 class="section-heading">Skills</h2>
+                        <div class="skills-row">
+                            <div class="skill-card home_page box">
+                                <h3 class="skill-card-title">Project Management</h3>
+                                <p class="tools-label">Tools I Use</p>
+                                <div class="tools-grid">
+                                    <div class="tool-item"><span class="tool-icon"><img src="Trello.png" alt="Trello" width="30"></span><span>Trello</span></div>
+                                    <div class="tool-item"><span class="tool-icon"><img src="Slack.png" alt="Trello" width="30"></span></span><span>Slack</span></div>
+                                    <div class="tool-item"><span class="tool-icon"><img src="GitHub.png" alt="Trello" width="30"></span></span><span>GitHub</span></div>
+                                    <div class="tool-item"><span class="tool-icon"><img src="Teams.png" alt="Trello" width="30"></span></span><span>Teams</span></div>
+                                    <div class="tool-item"><span class="tool-icon"><img src="PowerPoint.png" alt="Trello" width="30"></span></span><span>Power Point</span></div>
+                                    <div class="tool-item"><span class="tool-icon"><img src="Excel.png" alt="Trello" width="30"></span></span><span>Excel</span></div>
+                                </div>
+                            </div>
+                            <div class="skill-card home_page box">
+                                <h3 class="skill-card-title">Tech Development</h3>
+                                <p class="tools-label">Tools I Use</p>
+                                <div class="tools-grid">
+                                    <div class="tool-item"><span class="tool-icon"><img src="Power-Bi.png" alt="Trello" width="23"></span></span><span>PowerBi</span></div>
+                                    <div class="tool-item"><span class="tool-icon"><img src="SQL.png" alt="Trello" width="30"></span></span><span>SQL</span></div>
+                                    <div class="tool-item"><span class="tool-icon"><img src="Javascript.png" alt="Trello" width="30"></span></span><span>Javascript</span></div>
+                                    <div class="tool-item"><span class="tool-icon"><img src="CSS3.png" alt="Trello" width="30"></span></span><span>CSS</span></div>
+                                    <div class="tool-item"><span class="tool-icon"><img src="Python.png" alt="Trello" width="30"></span></span><span>Python</span></div>
+                                    <div class="tool-item"><span class="tool-icon"><img src="Pandas.png" alt="Trello" width="30"></span></span><span>Pandas</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-section" id="education-section">
+                        <h2 class="section-heading">Education</h2>
+                        <div class="education-card">
+                            <div class="edu-logo-placeholder"><img src="UA_Logo.png" alt="UA_logo" width="90"></span></div>
+                            <div class="edu-info">
+                                <h3 class="edu-school">University of Arkansas</h3>
+                                <p class="edu-grad">Expected Graduation: Dec 2026</p>
+                                <p class="edu-desc">
+                                    Computer Science major navigating toward becoming a project manager in tech or business. 
+                                    Relevant experience includes managing and creating a cross-functional engineering team to develop an embedded AI safety device and building sales analytics dashboards/Gantt charts.
+                                    As well as doing documentation, testing code, and developing websites.
+                                    Coursework includes algorithms, database management, and software engineering while being a Residential assistant with the university.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </section>
+ 
+        <!-- ══════════════ PROJECTS ══════════════ -->
+        <section id="projects" class="page-section" style="display:none;">
+            <div class="proj-wrapper">
+ 
+                <!-- TOP HEADER -->
+                <div class="proj-header">
+                    <div class="proj-header-left">
+                        <h2 class="proj-main-title">Management &amp; Projects</h2>
+                        <p class="proj-main-sub">A collection of recent management experiences and projects.</p>
+                        <p class="proj-main-sub">More in depth explanations found in my resume!</p>
+                    </div>
+                    <div class="proj-navigate">
+                        <button class="proj-arrow" id="projPrev">&#8592;</button>
+                        <span class="proj-nav-label">Navigate</span>
+                        <button class="proj-arrow" id="projNext">&#8594;</button>
+                    </div>
+                </div>
+ 
+                <!-- FEATURED PROJECT DISPLAY -->
+                <div class="proj-featured">
+                    <div class="proj-media-wrap">
+                        <!-- filled by JS -->
+                    </div>
+                    <div class="proj-featured-info">
+                        <h3 class="proj-feat-title"><!-- filled by JS --></h3>
+                        <p class="proj-feat-short"><!-- filled by JS --></p>
+                        <div class="proj-feat-divider"></div>
+                        <p class="proj-feat-summary"><!-- filled by JS --></p>
+                    </div>
+                </div>
+ 
+                <!-- CATEGORY FILTER NAV -->
+                <div class="proj-filter-bar">
+                    <span class="proj-filter-label">Other Management and Projects</span>
+                    <span class="proj-filter-sep">|</span>
+                    <button class="proj-filter-btn active-filter" data-filter="all">All</button>
+                    <button class="proj-filter-btn" data-filter="management">Management Experience</button>
+                    <button class="proj-filter-btn" data-filter="project">Projects</button>
+                    <button class="proj-filter-btn" data-filter="website">Website</button>
+                </div>
+ 
+                <!-- GRID OF ALL PROJECTS -->
+                <div class="proj-grid" id="projGrid">
+                    <!-- filled by JS -->
+                </div>
+ 
+            </div>
+        </section>
+ 
+        <!-- ══════════════ CONTACTS ══════════════ -->
+        <section id="contacts" class="page-section" style="display:none;">
+            <div class="home_center">
+                <div class="contact-inner">
+                    <h2>Contacts</h2>
+                    <p class="contact-subtext">
+                        Thank you for looking at my website! If you have any questions, feel free to call, email me,
+                        or message me on LinkedIn — I'd love to connect.
+                    </p>
+                    <p class="contact-subtext">jsblair300@gmail.com</p>
+                    <p class="contact-subtext">908-531-7809</p>
+                    <a href="https://linkedin.com" target="_blank">
+                        <img src="linkedin--v2.png" alt="LinkedIn" width="36">
+                    </a>
+                </div>
+            </div>
+        </section>
+ 
+    </div>
+ 
+    <script src="index.js"></script>
+</body>
+</html>
