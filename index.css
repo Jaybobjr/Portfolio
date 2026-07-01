@@ -290,7 +290,6 @@ header {
     width: 140px;
     height: 140px;
     border-radius: 50%;
-    background: linear-gradient(135deg,#6c00a2,#001152);
     border: 3px double #ffffff;
     display: flex;
     align-items: center;
