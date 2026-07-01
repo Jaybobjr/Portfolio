@@ -298,6 +298,7 @@ header {
     font-weight: 700;
     color: #fff;
     font-family: "Saira", sans-serif;
+    overflow: hidden;  /* add this */
 }
 .profile-info { flex: 1; }
 .profile-name {
